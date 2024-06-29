@@ -1,0 +1,166 @@
+	{% load static %}
+	
+	
+	{% include "header.html"%}
+ 
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row fullscreen d-flex justify-content-center align-items-center">
+						<div class="banner-content col-lg-9 col-md-12 justify-content-center">
+							
+							<h1>
+								Autism Spectrum Disorder			
+							</h1>
+							<p class="text-white mx-auto">
+								It is neurological and developmental 
+								disorder that affects how people interact 
+								with others, communicate, learn, and behave</p>
+							<a href="{% url 'asd' %}" class="primary-btn header-btn text-uppercase mt-10">check yor Result</a>
+						</div>											
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+
+			
+			
+			
+			<!-- Start service Area -->
+			<section class="service-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-12 pb-40 header-text text-center">
+							<h1 class="pb-10">What are the symtoms are there</h1>
+							<p>
+								some few symptoms are given Below
+							</p>
+						</div>
+					</div>							
+					<div class="row">
+						<div class="col-lg-3 col-md-6">
+							<div class="single-service">
+								<img class="img-fluid" src="{% static 'img/Delayed cognitive or learning skills..jpg' %}" alt="">
+								<a href="#"><h4>Delayed cognitive or learning skills</h4></a>
+								<p>
+									Intellectual disability is a term used when a person has certain limitations in mental functioning and in skills such as communicating, taking care of him or herself, and social skills. </p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="single-service">
+								<img class="img-fluid" src="{% static 'img/Delayed language skills..jpg' %}" alt="">
+								<a href="#"><h4>Delayed language skills</h4></a>
+								<p>
+									Difficulty developing language skills and understanding what others say to them. They also often have difficulty communicating nonverbally, such as through hand gestures, eye contact, and facial expressions.</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="single-service">
+								<img class="img-fluid" src="{% static 'img/Delayed movement skills..jpg' %}" alt="">
+								<a href="#"><h4>Delayed movement skills</h4></a>
+								<p>
+									It's difficulties or delays in developing motor abilities, such as coordination, balance, and fine motor skills. These challenges can manifest as clumsiness, difficulty with tasks like writing or using utensils, and delayed milestones in activities like walking or running. Motor skill delays can impact daily functioning and social interactions, making early intervention and tailored therapies essential for improvement.</p>
+							</div>
+						</div>	
+						<div class="col-lg-3 col-md-6">
+							<div class="single-service">
+								<img class="img-fluid" src="{% static 'img/Hyperactive, impulsive, inattentive behavior..jpg' %}" alt="">
+								<a href="#"><h4>Hyperactive, impulsive, inattentive behavior</h4></a>
+								<p>
+									It's difficulty staying still, frequent interruptions, acting without thinking, and a short attention span. These behaviors can lead to challenges in social interactions and daily activities, requiring tailored strategies for management and support.</p>
+							</div>
+						</div>																		
+					</div>
+				</div>	
+			</section>
+			<!-- End service Area -->
+
+			<!-- Start home-about Area -->
+			<section class="home-about-area section-gap relative">			
+				<div class="container">
+					<div class="row align-items-center justify-content-end">
+						<div class="col-lg-6 no-padding home-about-right">
+							<h1 class="text-white">
+								impact of autism spectrum <br>
+								disorder
+								
+							</h1>
+							<p>
+								People with autism may have difficulty with communication and social interaction; 
+								restricted interests and repetitive behaviors; and inability to function effectively in school, work, and other areas of life.
+							<div class="row no-gutters">
+								<div class="single-services col">
+									<span class="lnr lnr-diamond"></span>
+									<a href="{% url 'spectrum' %}">
+										<h4 class="text-white">Read More</h4>
+									</a>
+									
+								</div>
+															
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End home-about Area -->
+
+			<!-- Start testomial Area -->
+			<section class="testomial-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">About our team</h1>
+								<p></div>
+						</div>
+					</div>						
+					<div class="row">
+						<div class="active-testimonial-carusel">
+							<div class="single-testimonial item" >
+								<img class="mx-auto" src="{% static 'img/2.png' %}" alt="" style="width: 50%;" >
+								<p class="desc">
+									</p>
+								<h4>Prof. Ravikumar Natarajan</h4>
+								<p>
+									
+									Assistant Professor<br>
+									Department of Computer Engineering<br>
+									Marwadi University, Rajkot, India
+								</p>
+							</div>
+								
+							<div class="single-testimonial item" >
+								<img class="mx-auto " src="{% static 'img/1.png' %}" alt="" style="width: 75%;" >
+								<p class="desc">
+								</p>
+								<h4>Masruk Habib</h4>
+								<p>
+									B.Tech student<br>
+									Department of Computer Engineering<br>
+									Marwadi University, Rajkot, India
+								</p>
+								</p>
+							</div>
+							<div class="single-testimonial item">
+								<img class="mx-auto" src="{% static 'img/3.png' %}" alt=""  style="width: 75%;" >
+								<p class="desc">
+								</p>
+								<h4>Puvanenthirarajah</h4>
+								<p>
+									B.Tech student<br>
+									Department of Computer Engineering<br>
+									Marwadi University, Rajkot, India
+								</p>
+								</p>
+							</div>
+																			
+						</div>
+					</div>
+				</div>	
+			</section>				
+
+				<hr>
+				<br>	
+
+			{% include "footer.html" %}

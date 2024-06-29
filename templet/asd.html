@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Form</title>
+    <style>
+small{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    color: red;
+    font-size: medium;
+    width: 400px;
+    position: fixed;
+    
+}
+        
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 1000px;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        div select #A1_Score,#A1_Score,#A2_Score,#A3_Score,#A4_Score,#A5_Score,#A6_Score,#A7_Score,#A8_Score,#A9_Score,#A10_Score{
+            display: flex;
+            margin-top: 40px;
+            position: relative;
+            
+
+        }
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            float: left;
+            margin-right: 5%;
+        }
+        .form-group:last-child {
+            margin-right: 0;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"], select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"]{
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: auto;
+            float: right;
+        }
+        input[type="submit"],a:hover {
+            background-color: #45a049;
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        a{
+            background-color: #a8af4c;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            margin-left: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: auto;
+            float: right;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>A quick referral guide for parents to complete about a child aged 4-11 years with suspected
+            autism who does not have a learning disability</h2>
+        <form action="{%url 'result' %}" method="post" class="clearfix">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="A1_Score">A1 Score:</label>
+                <small id="a1score">*</small>
+                <select id="A1_Score" name="A1_Score" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                
+            </div>
+            <div class="form-group">
+                <label for="A2_Score">A2 Score:</label>
+                <small id="a2score" >*</small>
+                <select id="A2_Score" name="A2_Score" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+               
+            </div>
+            <div class="form-group">
+                <label for="A3_Score">A3 Score:</label>
+                <small id="a3score" >*</small>
+                <select id="A3_Score" name="A3_Score" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                
+            </div>
+            <div class="form-group">
+                <label for="A4_Score">A4 Score:</label>
+                <small id="a4score" >*</small>
+                <select id="A4_Score" name="A4_Score" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                
+            </div>
+            <div class="form-group">
+                <small id="a5score" >*</small>
+                <label for="A5_Score">A5 Score:</label>
+                <select id="A5_Score" name="A5_Score" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                
+            </div>
+            <div class="form-group">
+                <small id="a6score" >*</small>
+                <label for="A6_Score">A6 Score:</label>
+                <select id="A6_Score" name="A6_Score" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                
+            </div>
+            <div class="form-group">
+                <small id="a7score" >*</small>
+                <label for="A7_Score">A7 Score:</label>
+                <select id="A7_Score" name="A7_Score" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+               
+            </div>
+            <div class="form-group">
+                <small id="a8score" >*</small>
+                <label for="A8_Score">A8 Score:</label>
+                <select id="A8_Score" name="A8_Score" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                
+            </div>
+            <div class="form-group">
+                <small id="a9score" >*</small>
+                <label for="A9_Score">A9 Score:</label>
+                <select id="A9_Score" name="A9_Score" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                
+            </div>
+            <div class="form-group">
+                <small id="a10score" >*</small>
+                <label for="A10_Score">A10 Score:</label>
+                <select id="A10_Score" name="A10_Score" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Please Enter Age 4 to 11 only " required>
+                
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="jundice">Jundice:</label>
+                <select id="jundice" name="jundice" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="autism">Autism:</label>
+                <select id="autism" name="autism" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="used_app_before">Used App Before:</label>
+                <select id="used_app_before" name="used_app_before" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+            </div>
+           
+            <input type="submit" value="Submit">
+        </form>
+       
+    </div>
+    <script>
+    
+        var hoverMessages = {
+            'a1score': 'S/he often notices small sounds when others do not.',
+            'a2score': 'TS/he usually concentrates more on the whole picture, rather than the small details',
+            'a3score': 'In a social group, s/he can easily keep track of several different people’s conversations',
+            'a4score': 'S/he finds it easy to go back and forth between different activities.',
+            'a5score': 'S/he doesn’t know how to keep a conversation going with his/her peers.',
+            'a6score': 'S/he is good at social chit-chat.',
+            'a7score': 'When s/he is read a story, s/he finds it difficult to work out the character’s intentions or feelings.',
+            'a8score': 'When s/he was in preschool, s/he used to enjoy playing games involving pretending with other children.',
+            'a9score': 'S/he finds it easy to work out what someone is thinking or feeling just by looking at their face.',
+            'a10score': 'S/he finds it hard to make new friends.'
+        };
+    Object.keys(hoverMessages).forEach(function(id) {
+        var element = document.getElementById(id);
+        var message = hoverMessages[id];
+
+        element.addEventListener('mouseover', function() {
+            element.textContent = message;
+            element.style.display = 'block';
+            element.popover.length='400px'
+           
+        });
+
+        element.addEventListener('mouseout', function() {
+            element.textContent = '*';
+        });
+    });
+    </script>
+</body>
+</html>
